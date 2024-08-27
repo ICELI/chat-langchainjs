@@ -30,6 +30,7 @@ jobs:
         run: yarn workspace backend ingest
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           WEAVIATE_URL: ${{ secrets.WEAVIATE_URL }}
           WEAVIATE_API_KEY: ${{ secrets.WEAVIATE_API_KEY }}
           WEAVIATE_INDEX_NAME: ${{ secrets.WEAVIATE_INDEX_NAME }}
